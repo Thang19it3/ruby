@@ -1,0 +1,2 @@
+class Trandau < ApplicationRecord
+end

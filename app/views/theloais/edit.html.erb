@@ -1,0 +1,12 @@
+<h1 style="margin-left:600px; margin-top: 50px;">EDIT THỂ LOẠI</h1>
+<div style="width: 600px;margin-left:400px; margin-top: 200px;">
+<%= form_with model: @theloai do |form| %>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 50px;">THỂ LOẠI</label>
+    <%= form.text_field :tenTheLoai, placeholder: "Nhập tên thể loại", html: {class: "form-control"}  %>
+  </div>
+  <div class="form-group" style="margin-left: 150px;">
+  <%= form.submit "EDIT"%>
+  </div>
+  <%end%>
+</div>

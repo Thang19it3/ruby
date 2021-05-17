@@ -1,0 +1,2 @@
+module TintucsHelper
+end

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tenDoiBong: MyString
+  tenVietTat: MyString
+  date: MyString
+  khauHieu: MyString
+  id_user: 1
+  trandau: MyString
+
+two:
+  tenDoiBong: MyString
+  tenVietTat: MyString
+  date: MyString
+  khauHieu: MyString
+  id_user: 1
+  trandau: MyString

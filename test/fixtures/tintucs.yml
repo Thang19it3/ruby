@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tieuDe: MyString
+  tomTat: MyString
+  noiDung: MyString
+  image: MyString
+  date: MyString
+  noiBat: MyString
+  loaitins: one
+
+two:
+  tieuDe: MyString
+  tomTat: MyString
+  noiDung: MyString
+  image: MyString
+  date: MyString
+  noiBat: MyString
+  loaitins: two

@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <%= stylesheet_link_tag "bootstrap.min" %>
+        <%= stylesheet_link_tag "style_admin" %>
+        <%= stylesheet_link_tag "chart" %>
+        <%= javascript_pack_tag 'hihi' %>
+     <%= javascript_pack_tag 'home' %>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>ADMIN</title>
+    </head>
+
+    <body>
+        <!-- ============================================================== -->
+        <!-- main wrapper -->
+        <!-- ============================================================== -->
+        <div class="dashboard-main-wrapper">
+            <!-- ============================================================== -->
+            <!-- navbar -->
+            <!-- ============================================================== -->
+            <div class="dashboard-header" style="margin-left: 100px;">
+                <nav class="navbar navbar-expand-lg bg-white fixed-top" style="margin-left:-20px;">
+                    <a class="navbar-brand" href="#">QUẢN LÝ</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto navbar-right-top">
+                            <li class="nav-item dropdown nav-user">
+                                <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                                <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                    <div class="nav-user-info">
+                                        <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                                        <span class="status"></span><span class="ml-2">Available</span>
+                                    </div>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end navbar -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- left sidebar -->
+            <!-- ============================================================== -->
+            <div class="nav-left-sidebar sidebar-dark">
+                <div class="menu-list" style="margin-left:-60px;">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                                    <div class="nav-left-sidebar sidebar-dark">
+                <div class="menu-list">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-divider">
+                                   ADMIn
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Thống Kê</a>
+                                    <div id="submenu-4" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="http://127.0.0.1:8000/admin/thongke/thongke">Danh Sach</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link active " href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Tin Tức<span class="badge badge-success">6</span></a>
+                                    <div id="submenu-1" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">Thể Loại</a>
+                                                <div id="submenu-1-2" class="collapse submenu" style="">
+                                                    <ul class="nav active flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="http://127.0.0.1:3000/theloais">Danh Sách</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link " href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Loại Tin</a>
+                                                <div id="submenu-1-1" class="collapse submenu" style="">
+                                                    <ul class="nav  flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="http://127.0.0.1:3000/loaitins">DAHH SACH</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item active">
+                                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-3" aria-controls="submenu-1-1">Tin Tức</a>
+                                                <div id="submenu-1-3" class="collapse submenu" style="">
+                                                    <ul class="nav active flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="http://127.0.0.1:3000/tintucs">Danh Sach</a>
+                                                        </li>
+                                                      
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Đội Bóng</a>
+                                    <div id="submenu-3" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                           <li class="nav-item">
+                                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2-1" aria-controls="submenu-2-1">Đội Bóng</a>
+                                                <div id="submenu-2-1" class="collapse submenu" style="">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="http://127.0.0.1:8000/admin/doibong/tendb/danhsach">Danh Sach</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="http://127.0.0.1:8000/admin/doibong/them">Thêm</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2-2" aria-controls="submenu-2-2">Thành viên</a>
+                                                <div id="submenu-2-2" class="collapse submenu" style="">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="http://127.0.0.1:8000/admin/doibong/thanhvien/danhsach">Danh Sach</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="http://127.0.0.1:8000/admin/doibong/thanhvien/them">Thêm</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4-2" aria-controls="submenu-4-2"><i class="fab fa-fw fa-wpforms"></i>Trận Bóng</a>
+                                    <div id="submenu-4-2" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="http://127.0.0.1:8000/admin/doibong/tendb/trandau1">Danh Sach</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                             <li class="nav-item ">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4-2-1" aria-controls="submenu-4-2-1"><i class="fab fa-fw fa-wpforms"></i>User</a>
+                                    <div id="submenu-4-2-1" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="http://127.0.0.1:8000/admin/user/danhsach">Danh Sach</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-wrapper">
+      <h1 style="margin-left: 100px;">Danh sách đọi bóng</h1>
+<table class="table" style="width: 400px;margin-left:200px;margin-top: 100px;">
+  <thead class="thead-dark">
+    <tr style="color: white;background: black;">
+      <th scope="col">#</th>
+      <th scope="col">Tên Club</th>
+      <th scope="col">Viết Tắt</th>
+      <th scope="col">Ngày Thành Lập</th>
+      <th scope="col">Khẩu Hiệu</th>
+      <th scope="col">Logo</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @doibong.each do |tl| %>
+    <tr>
+      <th scope="row"><%= tl.id %></th>
+      <th scope="row"><%= tl.tenDoiBong %></th>
+      <th scope="row"><%= tl.tenVietTat %></th>
+      <th scope="row"><%= tl.date %></th> 
+      <th scope="row"><%= tl.khauHieu %></th>
+      <th scope="row"><%= image_tag tl.image_url.to_s , class: "recipe-show" %></th>
+      <td><%= button_to 'Edit', edit_doibong_path(tl), method: 'get' %></td>
+      <td><%= button_to 'Remove', doibong_path(tl), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<div style="margin-left: 200px;margin-top:50px;">
+    <%= button_to 'ADD', new_doibong_path, method: 'get'%>
+</div>
+    </div>
+    <!-- main js -->
+    <script src="{{asset('js/main.js')}}"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.bars li .bar').each(function(key, bar){
+            var percentage = $(this).data('percentage');
+            $(this).animate({
+                'height' :percentage +'%'
+            },1000);
+        });
+    });
+</script>
+</body>
+ 
+</html>
+
+
+

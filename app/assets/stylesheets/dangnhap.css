@@ -1,0 +1,165 @@
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+.orange-text {
+    color: orange !important;
+}
+.btn {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-social {
+    position: relative;
+    padding-left: 3rem;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-outline-primary {
+    color: #3d348b;
+    border-color: #3d348b;
+}
+.btn-social-icon {
+    position: absolute;
+    left: 1rem;
+    width: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fa-2x {
+    font-size: 2em;
+}
+.btn-outline-red {
+    color: #CF4332;
+    border-color: #CF4332;
+}
+.letter-spacing-2 {
+    letter-spacing: .2em;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: rgba(0,0,0,0.1);
+    text-align: center;
+    height: 1.5rem;
+}
+.hr-text:before {
+    content: '';
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    font-size: .8rem;
+    padding: 0 .5em;
+    line-height: 1.5rem;
+    color: #adb5bd;
+    background-color: #fff;
+}
+.form-label {
+    color: #868e96;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.6rem;
+    padding-left: 1.5rem;
+}
+.text-muted {
+    color: #868e96 !important;
+}
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #3d348b;
+    border-color: #3d348b;
+}
+a {
+    color: #3d348b;
+    text-decoration: none;
+    background-color: transparent;
+}
+img.bg-image {
+    font-family: 'object-fit: cover;';
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+}
+.bg-gray-800 {
+    background: #343a40 !important;
+}
+.text-gray-300 {
+    color: #dee2e6;
+}
+.bg-gray-200 {
+    background: #e9ecef !important;
+}
+a:hover {
+	text-decoration: none;
+}
+.bg{
+    background-image: url('https://sports-club.cmsmasters.net/wp-content/uploads/2015/04/footer_lodyas1.png');
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+}
+@media (min-width: 1200px) {
+	.pl-xl-6, .px-xl-6 {
+	    padding-left: 6rem !important;
+	}
+}
+@media (min-width: 1200px) {
+	.pr-xl-6, .px-xl-6 {
+    padding-right: 6rem !important;
+	}
+}
+.mt-7 {
+    margin-top: 8rem !important;
+}
+.bt-fb:hover {
+	color : white;
+	background: #3d348b;
+}
+.bt-gg:hover {
+	color: white;
+	background: #dc3545;
+}
+.bt-login:hover {
+	background: #3d348b;
+}
+.btn-outline-orange {
+    color: orange;
+    border-color: orange;
+}
+.btn-outline-orange:hover {
+    color: white;
+    border-color: orange;
+    background: orange;
+}

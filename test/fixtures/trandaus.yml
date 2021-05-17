@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_db1: 1
+  id_db2: 1
+  time: MyString
+  ngay: 2021-04-26
+  id_user: 1
+  confirm: MyString
+  string: MyString
+  id_user2: 1
+
+two:
+  id_db1: 1
+  id_db2: 1
+  time: MyString
+  ngay: 2021-04-26
+  id_user: 1
+  confirm: MyString
+  string: MyString
+  id_user2: 1

@@ -1,0 +1,33 @@
+<h1 style="margin-left:600px; margin-top: 50px;">EDIT Club</h1>
+<div style="width: 600px;margin-left:400px; margin-top: 200px;">
+<%= form_with model: @doibong ,:html => {:multipart => true} do |form| %>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 50px;">Tiêu Đề</label>
+    <%= form.text_field :tenDoiBong, placeholder: "Nhập tên club", html: {class: "form-control"}  %>
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 45px;">Tóm Tắt</label>
+    <%= form.text_field :tenVietTat, placeholder: "Nhập tên viết tắt", html: {class: "form-control"}  %>
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 40px;">Nội Dung</label>
+    <%= form.text_area :khauHieu, placeholder: "Nhập khẩu hiệu", html: {class: "form-control"}  %>
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 65px;">Ngày</label>
+    <%= form.text_field :date, placeholder: "Ngày", html: {class: "form-control"}  %>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 65px;">Ngày</label>
+    <%= form.text_field :id_user, placeholder: "id user", html: {class: "form-control"}  %>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 50px;">Ảnh</label>
+    <%= form.file_field :image, placeholder: "Nổi Bật", html: {class: "form-control"}  %>
+  </div>
+  <div class="form-group" style="margin-left: 150px;">
+  <%= form.submit "EDITx"%>
+  </div>
+  <%end%>
+</div>
+

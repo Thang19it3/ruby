@@ -1,0 +1,17 @@
+<h1 style="margin-left:600px; margin-top: 50px;">EDIT THỂ LOẠI</h1>
+<div style="width: 600px;margin-left:400px; margin-top: 200px;">
+<%= form_with model: @loaitin do |form| %>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 50px;">LOẠI TIN</label>
+    <%= form.text_field :tenLoaiTin, placeholder: "Nhập tên loại tin", html: {class: "form-control"}  %>
+  </div>
+  <div style="margin-left: 110px;margin-bottom: 50px;">
+  <%= form.collection_select  :theloais_id, Theloai.order(:id), :id, :tenTheLoai %>
+  </div>
+  <div class="form-group" style="margin-left: 150px;">
+  <%= form.submit "EDIT"%>
+  </div>
+  <%end%>
+</div>
+
+

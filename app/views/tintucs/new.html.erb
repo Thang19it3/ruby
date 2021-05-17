@@ -1,0 +1,35 @@
+<h1 style="margin-left:600px; margin-top: 50px;">ADD Tin Tức</h1>
+<div style="width: 600px;margin-left:400px; margin-top: 200px;">
+<%= form_with model: @tintuc ,:html => {:multipart => true} do |form| %>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 50px;">Tiêu Đề</label>
+    <%= form.text_field :tieuDe, placeholder: "Nhập tên tiêu đề", html: {class: "form-control"}  %>
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 45px;">Tóm Tắt</label>
+    <%= form.cktext_area :tomTat, placeholder: "Nhập tên Tóm Tắt", html: {class: "form-control"}  %>
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 40px;">Nội Dung</label>
+    <%= form.cktext_area :noiDung, placeholder: "Nhập tên nội dung", html: {class: "form-control"}  %>
+  </div>
+  <div style="margin-left: 110px;margin-bottom: 50px;">
+  <%= form.collection_select  :loaitins_id, Loaitin.order(:id), :id, :tenLoaiTin %>
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 65px;">Ngày</label>
+    <%= form.text_field :date, placeholder: "Ngày", html: {class: "form-control"}  %>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 50px;">Nổi Bật</label>
+    <%= form.text_field :noiBat, placeholder: "Nổi Bật", html: {class: "form-control"}  %>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput" style="margin-right: 50px;">Ảnh</label>
+    <%= form.file_field :image, placeholder: "Nổi Bật", html: {class: "form-control"}  %>
+  </div>
+  <div class="form-group" style="margin-left: 150px;">
+  <%= form.submit "ADD"%>
+  </div>
+  <%end%>
+</div>
